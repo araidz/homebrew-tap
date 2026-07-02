@@ -6,6 +6,7 @@ Personal [Homebrew](https://brew.sh) tap.
 
 ```sh
 brew tap araidz/tap
+brew trust araidz/tap   # third-party taps require an explicit trust
 brew install --cask lidless
 ```
 
