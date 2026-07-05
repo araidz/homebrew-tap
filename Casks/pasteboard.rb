@@ -2,8 +2,7 @@ cask "pasteboard" do
   version "1.3"
   sha256 "29edd4281789119416f992155adcaba6010e877d2b3bd76f33cc9d2623ae5f30"
 
-  url "https://github.com/araidz/PasteBoard/releases/download/v#{version}/PasteBoard.dmg",
-      verified: "github.com/araidz/PasteBoard/"
+  url "https://github.com/araidz/PasteBoard/releases/download/v#{version}/PasteBoard.dmg"
   name "PasteBoard"
   desc "Clipboard history manager for the menu bar"
   homepage "https://github.com/araidz/PasteBoard"
@@ -13,7 +12,7 @@ cask "pasteboard" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "PasteBoard.app"
 
