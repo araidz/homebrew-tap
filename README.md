@@ -14,3 +14,5 @@ brew install --cask lidless
 
 - **lidless** — menu-bar app that keeps a Mac awake with the lid closed.
   Upstream: [nghialuong/Lidless](https://github.com/nghialuong/Lidless).
+- **pasteboard** — menu-bar clipboard history with ⌥⌘V auto-paste, search, and pinning.
+  Upstream: [araidz/PasteBoard](https://github.com/araidz/PasteBoard).
