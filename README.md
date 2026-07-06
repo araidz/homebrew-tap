@@ -16,3 +16,5 @@ brew install --cask lidless
   Upstream: [nghialuong/Lidless](https://github.com/nghialuong/Lidless).
 - **pasteboard** — menu-bar clipboard history with ⌥⌘V auto-paste, search, and pinning.
   Upstream: [araidz/PasteBoard](https://github.com/araidz/PasteBoard).
+- **netspeedmonitor** — menu-bar app showing live upload/download speed (MB/s).
+  Upstream: [araidz/NetSpeedMonitor](https://github.com/araidz/NetSpeedMonitor).
