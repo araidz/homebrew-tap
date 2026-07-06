@@ -2,8 +2,7 @@ cask "netspeedmonitor" do
   version "1.1"
   sha256 "bf758890b623e9a3e53d3da7dfc498805c5e92d4d322d179cdfeaa65cf93dbb0"
 
-  url "https://github.com/araidz/NetSpeedMonitor/releases/download/v#{version}/NetSpeedMonitor.zip",
-      verified: "github.com/araidz/NetSpeedMonitor/"
+  url "https://github.com/araidz/NetSpeedMonitor/releases/download/v#{version}/NetSpeedMonitor.zip"
   name "NetSpeedMonitor"
   desc "Menu bar app showing live upload/download speed"
   homepage "https://github.com/araidz/NetSpeedMonitor"
