@@ -11,6 +11,13 @@ cask "claudegauge" do
 
   app "ClaudeGauge.app"
 
+  # Ad-hoc signed (not notarized): strip the quarantine Homebrew stamps on, so
+  # Gatekeeper doesn't block first launch. Safe for a self-built personal tool.
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/ClaudeGauge.app"]
+  end
+
   caveats <<~EOS
     ClaudeGauge is an unofficial, ad-hoc-signed personal tool.
     First launch: it lives in the menu bar (no Dock icon). Open the menu and
