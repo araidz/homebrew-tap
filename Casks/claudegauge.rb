@@ -7,7 +7,7 @@ cask "claudegauge" do
   desc "Menu bar monitor for Claude usage limits (session + weekly) and local context tokens"
   homepage "https://github.com/araidz/ClaudeGauge"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "ClaudeGauge.app"
 
