@@ -1,6 +1,6 @@
 cask "netspeedmonitor" do
-  version "1.4"
-  sha256 "f0f05166228e3975698f7a3139b2d698ae2b219fb6b72073bbabd62157198568"
+  version "1.5"
+  sha256 "d8721de77c277bd80014317613ad1ad364032ca0a3b0c2c3d64a79399647e1c8"
 
   url "https://github.com/araidz/NetSpeedMonitor/releases/download/v#{version}/NetSpeedMonitor.zip"
   name "NetSpeedMonitor"
