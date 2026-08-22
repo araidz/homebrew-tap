@@ -1,6 +1,6 @@
 cask "pasteboard" do
-  version "2.7"
-  sha256 "cade00ef82f602ec2fa4e8f8b7537dedfffa6cb10434c69c233219effaeed6dd"
+  version "2.8"
+  sha256 "e4bf43a2af2be7820a4fb0a208f6da8549e4124795e978b70cfcc38a2b265c25"
 
   url "https://github.com/araidz/PasteBoard/releases/download/v#{version}/PasteBoard.dmg"
   name "PasteBoard"
