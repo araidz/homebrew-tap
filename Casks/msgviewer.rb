@@ -1,6 +1,6 @@
 cask "msgviewer" do
-  version "0.1.8"
-  sha256 "aedd63521606e1ee0c9ef1e1cac1c55ce7f323798586fdbc48c147191bd094a9"
+  version "0.1.9"
+  sha256 "b096eccf1602d2db4e1dbfd2697bf23f1897af5c95352703f3638f6dff888330"
 
   url "https://github.com/araidz/MSGViewer/releases/download/v#{version}/MSGViewer.app.zip"
   name "MSG Viewer"
