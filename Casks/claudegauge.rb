@@ -4,7 +4,7 @@ cask "claudegauge" do
 
   url "https://github.com/araidz/ClaudeGauge/releases/download/v#{version}/ClaudeGauge.app.zip"
   name "ClaudeGauge"
-  desc "Menu bar monitor for Claude usage limits (session + weekly) and local context tokens"
+  desc "Menu bar monitor for Claude usage limits and local context tokens"
   homepage "https://github.com/araidz/ClaudeGauge"
 
   depends_on macos: :ventura
@@ -13,9 +13,8 @@ cask "claudegauge" do
 
   # Ad-hoc signed (not notarized): strip the quarantine Homebrew stamps on, so
   # Gatekeeper doesn't block first launch. Safe for a self-built personal tool.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/ClaudeGauge.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/ClaudeGauge.app"]
   end
 
   caveats <<~EOS

@@ -2,8 +2,7 @@ cask "lidless" do
   version "0.1.1"
   sha256 "0e85d48711eaa6331ca672e2050344cdd66e4c2430a69cccfdfbc00885515b72"
 
-  url "https://github.com/nghialuong/Lidless/releases/download/v#{version}/Lidless-#{version}.dmg",
-      verified: "github.com/nghialuong/Lidless/"
+  url "https://github.com/nghialuong/Lidless/releases/download/v#{version}/Lidless-#{version}.dmg"
   name "Lidless"
   desc "Keeps the system awake while the lid is closed"
   homepage "https://github.com/nghialuong/Lidless"

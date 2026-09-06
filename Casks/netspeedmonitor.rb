@@ -16,11 +16,10 @@ cask "netspeedmonitor" do
 
   app "NetSpeedMonitor.app"
 
-  postflight do
+  postflight_steps do
     # Ad-hoc signed (not notarized): clear quarantine so it opens without the
     # right-click-Open dance.
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/NetSpeedMonitor.app"]
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/NetSpeedMonitor.app"]
   end
 
   zap trash: "~/Library/Preferences/com.araidz.NetSpeedMonitor.plist"

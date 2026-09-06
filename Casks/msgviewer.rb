@@ -12,9 +12,8 @@ cask "msgviewer" do
 
   app "MSGViewer.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/MSGViewer.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/MSGViewer.app"]
   end
 
   zap trash: "~/Library/Preferences/io.github.araidz.msgviewer.plist"

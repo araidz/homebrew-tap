@@ -16,11 +16,10 @@ cask "pasteboard" do
 
   app "PasteBoard.app"
 
-  postflight do
+  postflight_steps do
     # Self-signed (not notarized): clear quarantine so it opens without the
     # right-click-Open dance.
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/PasteBoard.app"]
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/PasteBoard.app"]
   end
 
   zap trash: [
