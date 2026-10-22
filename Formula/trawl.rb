@@ -7,14 +7,14 @@ class Trawl < Formula
   license "MIT"
 
   depends_on "aria2"
-  depends_on "python@3.14"
+  depends_on "python@3.15"
 
   def install
     libexec.install "trawl"
     (bin/"trawl").write <<~SH
       #!/bin/sh
       export PYTHONPATH="#{libexec}:$PYTHONPATH"
-      exec "#{formula_opt_bin("python@3.14")}/python3.14" -m trawl "$@"
+      exec "#{formula_opt_bin("python@3.15")}/python3.15" -m trawl "$@"
     SH
   end
 

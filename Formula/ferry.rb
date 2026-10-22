@@ -7,14 +7,14 @@ class Ferry < Formula
   license "MIT"
 
   depends_on "openvpn"
-  depends_on "python@3.14"
+  depends_on "python@3.15"
 
   def install
     libexec.install "ferry"
     (bin/"ferry").write <<~SH
       #!/bin/sh
       export PYTHONPATH="#{libexec}:$PYTHONPATH"
-      exec "#{formula_opt_bin("python@3.14")}/python3.14" -m ferry "$@"
+      exec "#{formula_opt_bin("python@3.15")}/python3.15" -m ferry "$@"
     SH
   end
 
